@@ -5,24 +5,25 @@
 
 Gem::Specification.new do |s|
   s.name = %q{path_rewriter}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sunteya"]
   s.date = %q{2010-04-06}
   s.email = %q{Sunteya@gmail.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.markdown"
   ]
   s.files = [
     ".gitignore",
-     "README",
+     "README.markdown",
      "Rakefile",
      "VERSION",
      "depends.rb",
      "lib/path_rewriter.rb",
      "lib/path_rewriter/rails.rb",
      "lib/path_rewriter/url_codec.rb",
+     "path_rewriter.gemspec",
      "spec/path_rewriter/url_codec_spec.rb",
      "spec/path_rewriter_spec.rb",
      "spec/spec.opts",
