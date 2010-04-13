@@ -16,7 +16,6 @@ module PathRewriter
           def call_with_rewrite(orig)
             env = orig.dup
             begin
-              puts PathRewriter::Rails.codec
               env["REQUEST_URI"] = PathRewriter::Rails.codec.decode(env["REQUEST_URI"])
               call_without_rewrite(env)
             rescue ActionController::NotImplemented, ActionController::MethodNotAllowed, ActionController::RoutingError
